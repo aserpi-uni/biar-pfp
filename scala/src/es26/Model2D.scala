@@ -1,10 +1,12 @@
 object Model2D {
 
+  //se si vogliono avere 2n linee, le ultime coincidenti con i bordi della finestra
   def getGrid(n:Int):List[Shape] = {
-    val l = (1 to n).map(_ * (1.0/n))
-
-    (for { x <- l } yield { new Line(x, 0.0, x, 1.0) }).toList :::
-    (for { y <- l } yield new Line(0.0, y, 1.0, y)).toList
+    (1 to n)  //until se si vogliono avere 2n-2 linee
+      .map(_.toDouble / n)  //.map((x:Int) => x.toDouble / (n + 1)) se si vogliono avere 2n linee centrate
+      .flatMap(
+        (x:Double) => List(new Line(x, 0.0, x, 1.0), new Line(0.0, x, 1.0, x)))
+      .toList
   }
 
   def main(args:Array[String]) {

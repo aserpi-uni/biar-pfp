@@ -1,2 +1,8 @@
-#escludi file compilati
+#file compilati
 out/
+
+#layout IDEA
+.idea/workspace.xml
+
+#path compiler
+.idea/libraries
