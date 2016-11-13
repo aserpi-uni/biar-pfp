@@ -3,6 +3,7 @@ out/
 
 #layout IDEA
 .idea/workspace.xml
+.idea/uiDesigner.xml
 
 #path compiler
 .idea/libraries

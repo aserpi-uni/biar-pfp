@@ -1,3 +1,7 @@
+package es26_28.es26
+
+import es26_28._
+
 object Model2D {
 
   //se si vogliono avere 2n linee, le ultime coincidenti con i bordi della finestra

@@ -1,3 +1,5 @@
+package es26_28
+
 import java.awt.{EventQueue,Graphics,Graphics2D,Dimension}
 import javax.swing.{JFrame,JPanel}
 
