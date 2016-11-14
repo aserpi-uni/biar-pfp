@@ -19,7 +19,13 @@ sealed abstract class Fun {
   def *(e:Fun) = Mul(this, e)
   def **(i:Int) = Pow(this, i)
   def deriv:Fun = this match {
-    case
+    case Const(i) => 0
+    case X() => 1
+    case Add(a, b) => a.deriv + b.deriv
+    case Sub(a, b) => a.deriv - b.deriv
+    case Mul(a, b) => (a.deriv * b) + (a * b.deriv)
+    case Pow(a, i) => i * a.deriv * (a ** (i - 1))
+
   }
 
   override def toString: String = this match {

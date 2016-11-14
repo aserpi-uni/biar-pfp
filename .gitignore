@@ -5,5 +5,7 @@ out/
 .idea/workspace.xml
 .idea/uiDesigner.xml
 
-#path compiler
+#path scala
 .idea/libraries
+.idea/modules.xml
+scala/scala.iml
