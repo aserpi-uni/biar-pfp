@@ -1,24 +1,21 @@
 #include<stdlib.h>
+#include <stdio.h>
 
-void main(int argc, char** argv) {
-  int n = 100000;
-  
-  int* A = (int*)malloc(sizeof(int)*n);
-  int* B = (int*)malloc(sizeof(int)*n);
-  int* C = (int*)malloc(sizeof(int)*n);
-  
-  int i;
-  for (i = 0; i < n; i++) {
-    A[i] = i *2;
-    B[i] = i *3;
-  }
+void main(int argc, char **argv) {
+    int n = 100;
 
-  int c = 0;
-  for (; c < n; c++) {
-    vecsum(A, B, C, n);
-    vecsum_seq(A, B, C, n);
-}
-  free(A);
-  free(B);
-  free(C);
+    short *V = (short*) malloc(sizeof(short) * n);
+
+    int i;
+    for (i = 0; i < n; i++) {
+        V[i] = 1;
+    }
+
+    int c = 0;
+    for (; c < n; c++) {
+        int r1 = elemsum(V, n);
+        int r2 = elemsum_seq(V, n);
+        printf("<%d, %d>\n", r1, r2);
+    }
+    free(V);
 }

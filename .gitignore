@@ -1,5 +1,6 @@
 #file compilati
 out/
+*.out
 
 #layout IDEA
 .idea/workspace.xml
