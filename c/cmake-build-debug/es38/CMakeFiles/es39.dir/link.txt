@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/es39.dir/main.c.o CMakeFiles/es39.dir/vecsum.c.o CMakeFiles/es39.dir/vecsum-seq.c.o CMakeFiles/es39.dir/__/es39/main.c.o CMakeFiles/es39.dir/__/es39/elemsum.c.o CMakeFiles/es39.dir/__/es39/elemsum-seq.c.o  -o es39 

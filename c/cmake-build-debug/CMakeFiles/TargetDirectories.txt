@@ -1,0 +1,17 @@
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/CMakeFiles/rebuild_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/CMakeFiles/edit_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/CMakeFiles/es1.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es2/CMakeFiles/edit_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es2/CMakeFiles/rebuild_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es2/CMakeFiles/es2.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/CMakeFiles/edit_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/CMakeFiles/rebuild_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/CMakeFiles/es3.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es38/CMakeFiles/edit_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es38/CMakeFiles/rebuild_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es38/CMakeFiles/es38.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es39/CMakeFiles/edit_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es39/CMakeFiles/rebuild_cache.dir
+/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es39/CMakeFiles/es39.dir

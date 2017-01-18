@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="es1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\es1\;CMake Files\es2\;CMake Files\es3\;CMake Files\es38\;CMake Files\es39\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="es1">
+				<Option output="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/es1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 es1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="es1/fast">
+				<Option output="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/es1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/include-fixed"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/6.3.1/../../../../include/c++/6.3.1/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 es1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es1/main.c">
+			<Option target="es1"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es1\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es1\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es2\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es2\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es3\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es3\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es38/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es38\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es38/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es38\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es39/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es39\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es39/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es39\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
