@@ -214,6 +214,12 @@ es3_BINARY_DIR:STATIC=/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-deb
 //Value Computed by CMake
 es3_SOURCE_DIR:STATIC=/home/earendil/Programmazione/biar-3-pfp/c/es3
 
+//Value Computed by CMake
+es4_BINARY_DIR:STATIC=/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4
+
+//Value Computed by CMake
+es4_SOURCE_DIR:STATIC=/home/earendil/Programmazione/biar-3-pfp/c/es4
+
 
 ########################
 # INTERNAL cache entries
@@ -313,7 +319,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

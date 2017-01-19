@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/CMakeFiles /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/CMakeFiles /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/CMakeFiles/progress.marks
+	cd /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 es4/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 es4/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,96 +97,33 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 es4/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 es4/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named es1
+# Convenience name for target.
+es4/CMakeFiles/es4.dir/rule:
+	cd /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 es4/CMakeFiles/es4.dir/rule
+.PHONY : es4/CMakeFiles/es4.dir/rule
 
-# Build rule for target.
-es1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 es1
-.PHONY : es1
+# Convenience name for target.
+es4: es4/CMakeFiles/es4.dir/rule
 
-# fast build rule for target.
-es1/fast:
-	$(MAKE) -f es1/CMakeFiles/es1.dir/build.make es1/CMakeFiles/es1.dir/build
-.PHONY : es1/fast
-
-#=============================================================================
-# Target rules for targets named es2
-
-# Build rule for target.
-es2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 es2
-.PHONY : es2
-
-# fast build rule for target.
-es2/fast:
-	$(MAKE) -f es2/CMakeFiles/es2.dir/build.make es2/CMakeFiles/es2.dir/build
-.PHONY : es2/fast
-
-#=============================================================================
-# Target rules for targets named es3
-
-# Build rule for target.
-es3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 es3
-.PHONY : es3
-
-# fast build rule for target.
-es3/fast:
-	$(MAKE) -f es3/CMakeFiles/es3.dir/build.make es3/CMakeFiles/es3.dir/build
-.PHONY : es3/fast
-
-#=============================================================================
-# Target rules for targets named es4
-
-# Build rule for target.
-es4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 es4
 .PHONY : es4
 
 # fast build rule for target.
 es4/fast:
-	$(MAKE) -f es4/CMakeFiles/es4.dir/build.make es4/CMakeFiles/es4.dir/build
+	cd /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug && $(MAKE) -f es4/CMakeFiles/es4.dir/build.make es4/CMakeFiles/es4.dir/build
 .PHONY : es4/fast
-
-#=============================================================================
-# Target rules for targets named es38
-
-# Build rule for target.
-es38: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 es38
-.PHONY : es38
-
-# fast build rule for target.
-es38/fast:
-	$(MAKE) -f es38/CMakeFiles/es38.dir/build.make es38/CMakeFiles/es38.dir/build
-.PHONY : es38/fast
-
-#=============================================================================
-# Target rules for targets named es39
-
-# Build rule for target.
-es39: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 es39
-.PHONY : es39
-
-# fast build rule for target.
-es39/fast:
-	$(MAKE) -f es39/CMakeFiles/es39.dir/build.make es39/CMakeFiles/es39.dir/build
-.PHONY : es39/fast
 
 # Help Target
 help:
@@ -196,12 +133,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... es1"
-	@echo "... es2"
-	@echo "... es3"
 	@echo "... es4"
-	@echo "... es38"
-	@echo "... es39"
 .PHONY : help
 
 
@@ -213,6 +145,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

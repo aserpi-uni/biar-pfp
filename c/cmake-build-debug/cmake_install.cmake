@@ -37,6 +37,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es1/cmake_install.cmake")
   include("/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es2/cmake_install.cmake")
   include("/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/cmake_install.cmake")
+  include("/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/cmake_install.cmake")
   include("/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es38/cmake_install.cmake")
   include("/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es39/cmake_install.cmake")
 

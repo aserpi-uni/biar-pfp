@@ -5,7 +5,7 @@
 		<Option title="c"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\es1\;CMake Files\es2\;CMake Files\es3\;CMake Files\es38\;CMake Files\es39\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\es1\;CMake Files\es2\;CMake Files\es3\;CMake Files\es4\;CMake Files\es38\;CMake Files\es39\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug"/>
@@ -133,6 +133,16 @@
 					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="es4">
+				<Option working_dir="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 es4"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="es38">
@@ -268,6 +278,12 @@
 		</Unit>
 		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\es3\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es4\"/>
+		</Unit>
+		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es4/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\es4\"/>
 		</Unit>
 		<Unit filename="/home/earendil/Programmazione/biar-3-pfp/c/es38/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\es38\"/>

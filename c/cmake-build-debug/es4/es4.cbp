@@ -2,29 +2,29 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="es3"/>
+		<Option title="es4"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\es1\;CMake Files\es2\;CMake Files\es3\;CMake Files\es4\;CMake Files\es38\;CMake Files\es39\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3"/>
+				<Option working_dir="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="es3">
-				<Option working_dir="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3"/>
+			<Target title="es4">
+				<Option working_dir="/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 es3"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es3/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 es4"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/earendil/Programmazione/biar-3-pfp/c/cmake-build-debug/es4/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
