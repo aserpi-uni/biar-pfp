@@ -11,14 +11,19 @@ void matmul_ikj_seq(const int** A, const int** B, int** C, size_t n) {
 
 void matmul_ikj(const int** A, const int** B, int** C, size_t n)
 {
-    __m128i a[n/4][n/4], b[n/4][n/4], c[n/4][n/4];
+    int Bt[n][n], i = 0, j = 0;
 
-    for (int i = 0; i < n/4; i++)
-        for (int j = 0; j < n/4; j++)
-        {
-            a[i][j] = _mm_loadu_si128((__m128i*)&A[i][j]);
-            b[i][j] = _mm_loadu_si128((__m128i*)&B[i][j]);
-        }
+    for (; i < n; i++)
+        for (; j < n; j++)
+            Bt[i][j] = B[i][j];
+
+
+    for (i = 0; i < n; i++)
+        for (j = 0; j < n; j+=4)
+            for (int k = 0; k < n; k+=4)
+            {
+                //TODO
+            }
 }
 
 

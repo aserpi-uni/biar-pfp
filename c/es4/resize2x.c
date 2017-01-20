@@ -29,23 +29,29 @@ void resize2x(unsigned char* in, int w, int h,
 {
     *oh = 2*h;
     *ow = 2*w;
-    *out = calloc((*oh)*(*ow), sizeof(unsigned char));
+    *out = malloc((*oh)*(*ow)*sizeof(unsigned char));
+    if (*out == NULL) clut_panic("ERROR allocating out buffer");
 
     int err;
     cl_kernel ker = clCreateKernel(dev->program, KERNEL, &err);
     clut_check_err(err, "ERROR creating kernel");
 
-    cl_mem bin = clCreateBuffer(dev->context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR,
-                                sizeof((*oh) * (*ow) * sizeof(unsigned char)), in, NULL);
-    cl_mem bout = clCreateBuffer(dev->context, CL_MEM_WRITE_ONLY, sizeof((*oh) * (*ow) * sizeof(unsigned char)), NULL,
-                                 NULL);
+    cl_mem bin = clCreateBuffer(dev->context, CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR, h*w*sizeof(unsigned char), in,
+                                NULL);
+    cl_mem bout = clCreateBuffer(dev->context, CL_MEM_WRITE_ONLY, (*oh) * (*ow) * sizeof(unsigned char), NULL, NULL);
     if (!bin || !bout) clut_panic("ERROR crating memory object");
 
     err = clSetKernelArg(ker, 0, sizeof(int), &h);
+    clut_check_err(err, "ERROR setting kernel argument 0");
+
     err |= clSetKernelArg(ker, 1, sizeof(int), &w);
-    err |= clSetKernelArg(ker, 2, sizeof(bin), bin);
-    err |= clSetKernelArg(ker, 3, sizeof(bout), bout);
-    clut_check_err(err, "ERROR setting kernel arguments");
+    clut_check_err(err, "ERROR setting kernel argument 1");
+
+    err |= clSetKernelArg(ker, 2, sizeof(cl_mem), &bin);
+    clut_check_err(err, "ERROR setting kernel argument 2");
+
+    err |= clSetKernelArg(ker, 3, sizeof(cl_mem), &bout);
+    clut_check_err(err, "ERROR setting kernel argument 3");
 
 
     cl_event event;

@@ -10,7 +10,7 @@
 //  Changed by:     $Author: demetres $
 //  Revision:       $Revision: 1.00 $
 
-#define M(mat, w, i, j) mat[i*w+h]
+#define M(mat, w, x, y) mat[(y)*(w)+(x)]
 
 
 __kernel void resize2x(int h, int w, __global unsigned char* in, __global unsigned char* out)
@@ -18,37 +18,21 @@ __kernel void resize2x(int h, int w, __global unsigned char* in, __global unsign
     int x = get_global_id(0);
     int y = get_global_id(1);
 
-    if (x >= h || y >= w) return;
+    if (x >= w || y >= h) return;
 
     M(out, w*2, x*2, y*2) = M(in, w, x, y);
 
-    if (y == w-1)
-    {
-        M(out, w*2, x*2, y*2 + 1) = M(in, w, x, y);
-        M(out, w*2, x*2 + 1, y*2 + 1) = M(in, w, x, y);
+    M(out, w*2, x*2 +1, y*2) = (x == w-1) ?
+                               M(in, w, x, y) :
+                               (M(in, w, x, y) + M(in, w, x +1, y))/2;
 
-        if (x == h-1)
-            M(out, w*2, x*2 + 1, y*2) = M(in, w, x, y);
-        else
-            M(out, w*2, x*2 + 1, y*2) = (M(in, w, x, y) + M(in, w, x+1, y))/2;
-    }
+    M(out, w*2, x*2, y*2 +1) = (y == h -1) ?
+                                M(in, w, x, y) :
+                                (M(in, w, x, y) + M(in, w, x, y +1))/2;
 
-    else
-    {
-        M(out, w*2, x*2, y*2 + 1) = (M(in, w, x, y) + M(in, w, x, y + 1))/2;
-
-        if (x == h-1)
-        {
-            M(out, w*2, x*2 + 1, y*2) = M(in, w, x, y);
-            M(out, w*2, x*2 + 1, y*2 + 1) = M(in, w, x, y);
-        }
-        else
-        {
-            M(out, w*2, x*2 + 1, y*2) = (M(in, w, x, y) + M(in, w, x + 1, y))/2;
-            M(out, w*2, x*2 + 1, y*2 + 1) = (M(in, w, x, y) + M(in, w, x + 1, y + 1))/2;
-        }
-    }
-
+    M(out, w*2, x*2 + 1, y*2 +1) = (x == w-1 || y == h-1) ?
+                                   M(in, w, x, y) :
+                                   (M(in, w, x, y) + M(in, w, x + 1, y + 1))/2;
 }
 
 
